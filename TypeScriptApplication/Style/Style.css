@@ -188,24 +188,35 @@ body{
 #Medicinetable {
     border: 1px solid black;
     width: 52rem;
-    height: 27rem;
+    height: auto;
     margin-top: 1rem;
     display: none;
 }
+
+#OrderTable {
+    border: 1px solid black;
+    width: 52rem;
+    height: auto;
+    margin-top: 1rem;
+    display: none;
+}
+
+
 table tr th{
     border: 2px solid black;
     width: 12rem;
-    height: 1rem;
+    height: 2rem;
  }
  table tr td{
     border: 2px solid black;
+    height: 3rem;
 
  }
 
  #purchaseTable{
     border: 1px solid black;
     width: 52rem;
-    height: 27rem;
+    height:auto;
     margin-top: 1rem;
     display: none;
  }
@@ -224,7 +235,56 @@ table tr th{
     display: none;
  }
 
+ #editData{
+    margin-top: 2rem;
+    height: 10rem;
+    width: 50%;
+    display: none;
+ }
+ #editData input{
+    height: 2rem;
+    margin-bottom: 1rem;
+ }
+
  #addDiv input{
     height: 2rem;
     margin-bottom: 1rem;
+ }
+
+ #rechargeDiv{
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    display: none;
+ }
+
+ #rechargeDiv input{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+
+ #rechargeDiv button{
+    height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+ }
+
+ #purchaseCount{
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    display: none;
+ }
+
+ #purchaseCount input{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+
+ #purchaseCount button{
+    height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
  }

@@ -49,50 +49,69 @@
         <div id="header">
             <button onclick="showMedicineDetail()">Madicine details</button>
             <button onclick="purchase()">Purchase</button>
-            <button>Cancel</button>
-            <button>Recharge Wallet</button>
-            <button>Show balance</button>
-            <button> order history</button>
+            <button onclick="cancelOrder()">Cancel</button>
+            <button onclick="RechargePage()">Recharge Wallet</button>
+            <button onclick="showBalace()">Show balance</button>
+            <button onclick="orderHistory()"> order history</button>
             <button onclick="backToMainPage()">logout</button>
         </div>
 
         <button id="addButton" onclick="addmedicine()">Add</button>
         <table id="Medicinetable">
-            <tr>
-                <th>MedicineID</th>
-                <th>Medicine Name</th>
-                <th>Medicine Price</th>
-                <th>Medicine Count</th>
-                <th>Medicine Expary</th>
-                <th colspan="2">Choice</th>
-            </tr>
+           
+        </table>
+
+        <table id="OrderTable">
+           
         </table>
 
         
         <table id="purchaseTable">
-            <tr>
-                <th>MedicineID</th>
-                <th>Medicine Name</th>
-                <th>Medicine Price</th>
-                <th>Medicine Count</th>
-                <th>Medicine Expary</th>
-                <th>Choice</th>
-            </tr>
+            
         </table>
+        <div id="purchaseCount">
+            <input id="UserEntercount" type="number" placeholder="enter the count">
+            <button onclick="Conform_purchase()">Conform_purchase</button>
+        </div>
 
         <div id="addDiv">
             <label for="newMadineName">newMadineName</label>
-            <input type="text" placeholder="Enter madicinename" name="newMadineName"><br>
+            <input id="newMadineName" type="text" placeholder="Enter madicinename" name="newMadineName"><br>
+
             <label for="newMedicinePrice">newMadinePrice</label>
-            <input name="newMadinePrice" type="text" placeholder="Price>"><br>
+            <input id="newMadinePrice" name="newMadinePrice" type="number" placeholder="Price"><br>
+
             <label for="newMedicineCount">newMedicineCount</label>
-            <input name="newMedicineCount" placeholder="Count" type="text"><br>
+            <input id="newMedicineCount" name="newMedicineCount" placeholder="Count" type="number"><br>
+
             <label for="newMadicineExpary">newMadicineExpary</label>
-            <input name="newMadicineExpary" placeholder="Expary date" type="date"><br><br>
+            <input id="newMadicineExpary" name="newMadicineExpary" placeholder="Expary date" type="date"><br><br>
+            
             <button onclick="addtomedicine()">submit</button>
 
         </div>
 
+        <div id="editData">
+            <label for="newMadineName">newMadineName</label>
+            <input id="EditName" type="text" placeholder="Enter madicinename" name="newMadineName"><br>
+
+            <label for="newMedicinePrice">newMadinePrice</label>
+            <input id="EditPrice" name="newMadinePrice" type="number" placeholder="Price"><br>
+
+            <label for="newMedicineCount">newMedicineCount</label>
+            <input id="editCount" name="newMedicineCount" placeholder="Count" type="number"><br>
+
+            <label for="newMadicineExpary">newMadicineExpary</label>
+            <input id="editExpartDate" name="newMadicineExpary" placeholder="Expary date" type="date"><br><br>
+            
+            <button onclick="Conform_editData()">submit</button>
+
+        </div>
+
+        <div id="rechargeDiv">
+            <input id="recharge_amount" type="number" placeholder="enter the amount">
+            <button onclick="Recharge()">Recharge</button>
+        </div>
     </div>
 </body>
 </html>
